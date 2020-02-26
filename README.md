@@ -1,9 +1,9 @@
 ## Start API
 
-`cd api`
+`cd api`  
 `nodemon sails l` or `sails l` or `sails lift`
 
 ## Start frontend
-
-`cd frontend`
+ 
+`cd frontend`  
 `npm run dev`
