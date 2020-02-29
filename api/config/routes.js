@@ -9,17 +9,17 @@
  */
 
 module.exports.routes = {
-    "/": { view: "pages/homepage" },
-    "POST /login": { action: "auth/login" },
-    "POST /register": { action: "auth/register" },
+	'/': { view: 'pages/homepage' },
+	'POST /login': { action: 'auth/login' },
+	'POST /register': { action: 'auth/register' },
 
-    /***************************************************************************
-     *                                                                          *
-     * RESTAURANT                                                               *
-     *                                                                          *
-     ***************************************************************************/
-    "POST /restaurant": { action: "restaurant/create" },
-    "GET /restaurant/:id": { action: "restaurant/get" },
-    "PUT /restaurant/:id": { action: "restaurant/update" },
-    "DELETE /restaurant/:id": { action: "restaurant/delete" }
-};
+	/***************************************************************************
+	 *                                                                          *
+	 * RESTAURANT                                                               *
+	 *                                                                          *
+	 ***************************************************************************/
+	'GET /restaurant': { action: 'restaurant/get' },
+	'POST /restaurant': { action: 'restaurant/create' },
+	'PUT /restaurant/:id': { action: 'restaurant/update' },
+	'DELETE /restaurant/:id': { action: 'restaurant/delete' }
+}
